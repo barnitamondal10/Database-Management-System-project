@@ -1,0 +1,123 @@
+<html>
+<head>
+<style type="text/css">
+h1{
+   font-size: 48px;
+   color: red;
+}
+h2 {
+font-size: 25px;
+   color: yellow; 
+}
+body{
+background-image: url(add_employee.jpg);
+background-size: 100%,100%;
+}
+
+.aa{
+width: 1200px;
+height: 820px;
+background-color: rgba(0,0,0,0.4);
+margin:0 auto;
+margin-top: 50px;
+padding-top: 18px;
+padding-left: 57px;
+border-radius: 20px;
+font-weight: bolder;
+font-size: 18px;
+box-shadow: inset 0 50px rgba(255,255,255,0.2),
+	    inset 0 -15px 30px rgba(0,0,0,0.4),
+		  0 5px 10px rgba(0,0,0,0.5);
+}
+.aa input[type="text"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+font-size: 15px;
+font-color: deeppink;
+}
+.aa input[type="number"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+}
+.aa input[type="submit"]{
+width: 120px;
+height: 35px;
+border: 0;
+border-radius: 5px;
+background-color: skyblue;
+font-weight: bolder;
+font-size: 17px;
+}
+
+</style>
+</head>
+<body>
+<div class="aa">
+<center>
+<form action="http://localhost/cosmetics/add_employee_php.php" method=POST>
+<u><h1><b>ADD EMPLOYEE DETAILS</b></h1></u>
+
+<h2>EMPLOYEE_ID:   <input type="text" name="eid" required="true"><h2>
+
+<h2>EMPLOYEE_NAME:   <input type="text" name="ename" required="true"></h2>
+
+<h2>GENDER:  <input type="radio" name="gender" value="male"checked>MALE
+ <input type="radio" name="gender" value="female">FEMALE
+ <input type="radio" name="gender" value="others">OTHERS</h2>
+<h2>ADDRESS:   <input type="text" name="address" required="true"></h2>
+
+<h2>PHONE_NO:   <input type="number" name="phone_no" required="true"></h2>
+
+<h2>DATE_OF_BIRTH:  <input type="date" name="dob" required="true"></h2>
+<h2>QUALIFICATION:    <select name="quali">
+<option disabled selected value>--SELECT AN OPTION--</option>
+<option
+value="UNMATRICULATE">UNMATRICULATE</option>
+<option
+value="10TH">10TH</option>
+<option
+value="12TH">12TH</option>
+<option
+value="GRADUATION">GRADUATION</option>
+<option
+value="POST GRADUATION">POST GRADUATION</option>
+</select></h2>
+
+<h2>APPOINTED_POST:   <input type="radio" name="apost" value="MANAGER"checked>MANAGER
+ <input type="radio" name="apost" value="SALES_MAN/WOMAN">SALES_MAN/WOMAN
+ <input type="radio" name="apost" value="ACCOUNTANT">ACCOUNTANT
+<input type="radio" name="apost" value="ATTENDER">ATTENDER</h2>
+
+<h2>DUTY_TIME:   <input type="text" name="dutytime" required="true"></h2>
+<h2>DATE_OF_APPOINTMENT:   <input type="date" name="dappoint" required="true"></h2>
+
+<h2>GROSS_SALARY:   <input type="text" name="salary" required="true"></h2>
+
+<h2>NET_SALARY:   <input type="text" name="salary_tax" required="true"></h2>
+
+<h2>EMP_USERNAME:  <input type="text" name="emp_username" required="true"></h2>
+
+<h2>EMP_PASSWORD:   <input type="text" name="emp_password" required="true"></h2>
+</br></br>
+
+
+<input type="submit" name="button"  value="SUBMIT"  >
+
+</form>
+<form action="http://localhost/cosmetics/employee_options.html" method=POST>
+<input type="submit" name="button"  value="BACK" style="float: left;>
+</form>
+</center>
+<form action="http://localhost/cosmetics/front.html" method=POST>
+<input type="submit" name="button"  value="LOGOUT"  style="float: right;">
+</form>
+</br></br>
+</div>
+</body>
+</html>
