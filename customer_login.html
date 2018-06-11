@@ -1,0 +1,87 @@
+<html>
+<head>
+<style type="text/css">
+h1{
+   color: orangered;
+}
+h2 {
+   color: deeppink;
+}
+h3{
+color: gold;
+}
+body{
+background-image: url(customer.jpg);
+background-size: cover;
+}
+
+.aa{
+width: 480px;
+height: 545px;
+background-color: rgba(0,0,0,0.4);
+margin:0 auto;
+margin-top: 50px;
+padding-top: 20px;
+padding-left: 60px;
+border-radius: 20px;
+font-weight: bolder;
+font-size: 18px;
+box-shadow: inset 0 50px rgba(255,255,255,0.2),
+	    inset 0 -15px 30px rgba(0,0,0,0.4),
+		  0 5px 10px rgba(0,0,0,0.5);
+}
+.aa input[type="text"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+}
+.aa input[type="password"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+}
+.aa input[type="submit"]{
+width: 100px;
+height: 35px;
+border: 0;
+border-radius: 5px;
+background-color: skyblue;
+font-weight: bolder;
+}
+
+</style>
+  </head>
+<body>
+<div class="aa">
+  <center>
+<h1>WELCOME CUSTOMER</h1>
+<h2>LOGIN</h2></br>
+<form action="http://localhost/cosmetics/customer_login_php.php" method=POST>
+    <label> <h3><b>CUSTOMER_ID: </b></label>
+    <input type="text" placeholder="ENTER CUSTOMER_ID" name="cust_id" required="true"></h3>
+    <label><h3><b>USERNAME: </b></label>
+    <input type="text" placeholder="ENTER USERNAME" name="cust_username" required="true"></h3>
+   <label><h3><b>PASSWORD: </b></label>
+    <input type="password" placeholder="ENTER PASSWORD" name="cust_passsword" required="true" ></h3>
+</br>
+  <input type="submit" name="button"  value="LOGIN"> 
+</form> <form action="http://localhost/cosmetics/new_customer_login.html" method=POST> 
+</br></br>
+<input type="submit" name="button"  value="SIGN UP"> 
+</form>
+<!-- <input type="submit" name="button"  value="bacK" style="float: right;>-->
+
+</br>
+</form>
+<form action="http://localhost/cosmetics/front.html"  method=POST>
+ <input type="submit" name="button"  value="BACK">
+</center>
+
+</form>
+</div>
+</body>
+</html>
