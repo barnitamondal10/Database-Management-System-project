@@ -1,0 +1,77 @@
+<html>
+<head>
+<style type="text/css">
+h1{
+   color: red;
+}
+h2 {
+   color: deeppink; 
+}
+body{
+background-image: url(order_options.jpg);
+background-size: 90%,90%;
+}
+
+.aa{
+width: 400px;
+height: 450px;
+background-color: rgba(0,0,0,0.0);
+margin:0 auto;
+margin-top: 30px;
+padding-top: 18px;
+padding-left: 45px;
+border-radius: 20px;
+font-weight: bolder;
+font-size: 18px;
+box-shadow: inset 0 30px rgba(255,255,255,0.2),
+	    inset 0 -15px 30px rgba(0,0,0,0.4),
+		  0 5px 10px rgba(0,0,0,0.5);
+}
+.aa input[type="text"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+}
+.aa input[type="password"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+}
+.aa input[type="submit"]{
+width: 120px;
+height: 35px;
+border: 0;
+border-radius: 5px;
+background-color: plum;
+font-weight: bolder;
+font-size: 17px;
+}
+
+</style>
+</head>
+<body>
+<div class="aa">
+  <center>
+<form action="http://localhost/cosmetics/order_options_php.php" method=POST>
+<u><b><h1>ORDER____OPTIONS</h1></b></u>
+
+    <input type="submit" name="button" style="height: 50px; width: 200px"  value="ADD ORDER"><br/>
+</br></br>
+  <input type="submit" name="button" style="height: 50px; width: 200px"   value="EDIT ORDER">
+ </br> </br></br> 
+<input type="submit" name="button" style="height: 50px; width: 200px"  value="VIEW ORDER">
+ </br> </br></br> 
+<input type="submit" name="button" style="height: 50px; width: 200px"  value="DELETE ORDER">
+ </br> </br></br> 
+</center>
+<input type="submit" name="button"  value="LOGOUT"  style="float: right;">
+
+<input type="submit" name="button"  value="BACK"  style="float: left;">
+</form>
+</div>
+</body>
+</html>
