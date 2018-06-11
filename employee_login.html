@@ -1,0 +1,85 @@
+<html>
+</br>
+<head>
+<style type="text/css">
+h1{
+   color: yellowgreen;
+}
+h2 {
+   color: goldenrod; 
+}
+h3{
+color: palegoldenrod;
+}
+body{
+background-image: url(employee.jpg);
+background-size: cover;
+}
+
+.aa{
+width: 450px;
+height: 420px;
+background-color: rgba(0,0,0,0.4);
+margin:0 auto;
+margin-top: 50px;
+padding-top: 20px;
+padding-left: 60px;
+border-radius: 20px;
+font-weight: bolder;
+font-size: 18px;
+box-shadow: inset 0 50px rgba(255,255,255,0.2),
+	    inset 0 -15px 30px rgba(0,0,0,0.4),
+		  0 5px 10px rgba(0,0,0,0.5);
+}
+.aa input[type="text"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+}
+.aa input[type="password"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+}
+.aa input[type="submit"]{
+width: 100px;
+height: 35px;
+border: 0;
+border-radius: 5px;
+background-color: skyblue;
+font-weight: bolder;
+}
+
+</style>
+</head>
+<body>
+<div class="aa">
+  <center>
+<h1>WELCOME  EMPLOYEE </h1>
+<h2>LOGIN</h2>
+<form action="http://localhost/cosmetics/employee_login_php.php" method=POST>
+    <label><h3><b>EMPLOYEE_ID: </b></label>
+    <input type="text" placeholder="ENTER EMPLOYEE_ID" name="eid" required="true"></h3>
+
+    <label><h3><b>USERNAME: </b></label>
+    <input type="text" placeholder="ENTER USERNAME" name="emp_username" required="true"></h3>
+
+    <label><h3><b>PASSWORD:</b></label>
+    <input type="password" placeholder="ENTER PASSWORD" name="emp_password" required="true" ></h3>
+</br>
+
+  <input type="submit" name="button"  value="LOGIN">
+</br></br>
+ 
+</form>
+<form action="http://localhost/cosmetics/front.html"  method=POST>
+ <input type="submit" name="button"  value="BACK">
+</center> 
+</form>
+</div>
+</body>
+</html>
