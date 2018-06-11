@@ -1,0 +1,13 @@
+$SQL = SELECT CID 
+
+$_SESSION['CID'] = $CID;
+
+
+
+
+WHILE
+logGINGout- 
+
+
+
+unset($_SESSION['CID'])
