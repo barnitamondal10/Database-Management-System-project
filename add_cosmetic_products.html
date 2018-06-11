@@ -1,0 +1,106 @@
+<html>
+
+<form action="http://localhost/cosmetics/add_cosmetic_products_php.php" method=POST>
+<head>
+<style type="text/css">
+h1{
+   font-size: 48px;
+   color: white;
+}
+h2 {
+font-size: 25px;
+   color: yellow; 
+}
+body{
+background-image: url(add_cp.jpg);
+background-size: 90%,100%;
+}
+
+.aa{
+width: 700px;
+height: 500px;
+background-color: rgba(0,0,0,0.2);
+margin:0 auto;
+margin-top: 50px;
+padding-top: 18px;
+padding-left: 57px;
+border-radius: 20px;
+font-weight: bolder;
+font-size: 18px;
+box-shadow: inset 0 50px rgba(255,255,255,0.2),
+	    inset 0 -15px 30px rgba(0,0,0,0.4),
+		  0 5px 10px rgba(0,0,0,0.5);
+}
+.aa input[type="text"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+font-size: 15px;
+font-color: deeppink;
+}
+.aa input[type="number"]{
+width: 200px;
+height: 30px;
+border: 0;
+border-radius: 5px;
+padding-left: 15px;
+}
+.aa input[type="submit"]{
+width: 120px;
+height: 35px;
+border: 0;
+border-radius: 5px;
+background-color: skyblue;
+font-weight: bolder;
+font-size: 17px;
+}
+
+</style>
+</head>
+<body>
+<div class="aa">
+<center>
+
+<u><h1><b>ADD__COSMETIC__PRODUCT</h1></b></u>
+
+<h2>COSMETIC_ID:   <input type="text" name="cpid" required="true"><h2>
+
+<h2>COSMETIC_NAME:   <input type="text" name="cpname" required="true"><h2>
+
+<h2>BRAND:   <select name="brand">
+<option disabled selected value>--SELECT AN OPTION--</option>
+<option
+value="LAKME">LAKME</option>
+<option
+value="REVLON">REVLON</option>
+<option
+value="EYETEX DAZZLER">EYETEX DAZZLER</option>
+<option
+value="ORIFLAME">ORIFLAME</option>
+<option
+value="NIVEA">NIVEA</option>
+</select><h2>
+
+<h2>DESCRIPTION:   <input type="text" name="description" required="true"><h2>
+
+<h2>PRICE:   <input type="number"min=1 name="price" required="true"><h2>
+
+
+<input type="submit" name="button"  value="SUBMIT"  ">
+
+</form>
+</br></br>
+<form action="http://localhost/cosmetics/cosmetic_product_options.html" method=POST>
+<input type="submit" name="button"  value="BACK" ></br></br>
+</form>
+</center>
+
+<form action="http://localhost/cosmetics/front.html" method=POST>
+<input type="submit" name="button"  value="LOGOUT"  style="float: right;">
+</form>
+</br></br>
+</div>
+</body>
+</html>
